@@ -20,6 +20,7 @@ public class HeroService {
 		heroes.add(new HeroDTO("Felicia Hardy", "Black Cat"));
 		heroes.add(new HeroDTO("Anna Marie", "Rogue"));
 		heroes.add(new HeroDTO("John Stewart", "Green Lantern"));
+		heroes.add(new HeroDTO("Jefferson Pierce", "Black Lightning"));
 		heroes.sort(new HeroComparator());
 		return heroes;
 	}

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 @RestController
 @RequestMapping("/heroes")
-public class heroHeroController {
+public class HeroController {
 
 	@Autowired
 	private HeroService apiService;
