@@ -1,31 +1,26 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: AWS Serverless Spring Boot 2 API - org.example::java-lambda
-Globals:
-   Api:
-      EndpointConfiguration: REGIONAL
-
 Resources:
    JavaLambdaFunction:
       Type: AWS::Lambda::Function
       Properties:
+         Role: arn:aws:iam::605134435329:role/basic-role-lambda
          Code:
             S3Bucket: backend-package-bucket
-            S3Key: backend-build/target/javaaws-0.0.1.jar
+            S3Key: backend-build/java-lambda-1.0-lambda-package.zip
          Handler: org.example.StreamLambdaHandler::handleRequest
          Runtime: java17
          MemorySize: 512
-         Policies: AWSLambdaBasicExecutionRole
          Timeout: 30
-         Events:
-            ProxyResource:
-               Type: Api
-               Properties:
-                  Path: /{proxy+}
-                  Method: any
-
-Outputs:
-   JavaLambdaApi:
-      Description: URL for application
-      Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/ping'
-      Export:
-         Name: JavaLambdaApi
+         #  Events:
+         #     ProxyResource:
+         #        Type: Api
+         #        Properties:
+         #           Path: /{proxy+}
+         #           Method: any
+# Outputs:
+#    JavaLambdaApi:
+#       Description: URL for application
+#       Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/ping'
+#       Export:
+#          Name: JavaLambdaApi
