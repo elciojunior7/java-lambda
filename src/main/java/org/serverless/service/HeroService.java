@@ -1,7 +1,7 @@
-package org.example.service;
+package org.serverless.service;
 
-import org.example.dto.HeroComparator;
-import org.example.dto.HeroDTO;
+import org.serverless.dto.HeroComparator;
+import org.serverless.dto.HeroDTO;
 
 import java.util.ArrayList;
 import java.util.List;

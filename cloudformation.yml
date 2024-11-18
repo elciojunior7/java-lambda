@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: AWS Serverless Spring Boot 2 API - org.example::java-lambda
+Description: AWS Serverless Spring Boot 2 API - org.serverless::java-lambda
 Resources:
    JavaLambdaFunction:
       Type: AWS::Lambda::Function
@@ -8,7 +8,7 @@ Resources:
          Code:
             S3Bucket: backend-package-bucket
             S3Key: backend-build/java-lambda-1.0-lambda-package.zip
-         Handler: org.example.StreamLambdaHandler::handleRequest
+         Handler: org.serverless.StreamLambdaHandler::handleRequest
          Runtime: java17
          MemorySize: 512
          Timeout: 30

@@ -1,4 +1,4 @@
-package org.example;
+package org.serverless;
 
 
 import com.amazonaws.serverless.exceptions.ContainerInitializationException;

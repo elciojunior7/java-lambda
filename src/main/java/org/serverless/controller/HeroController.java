@@ -1,6 +1,6 @@
-package org.example.controller;
+package org.serverless.controller;
 
-import org.example.service.HeroService;
+import org.serverless.service.HeroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;

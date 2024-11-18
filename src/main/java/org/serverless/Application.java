@@ -1,10 +1,9 @@
-package org.example;
+package org.serverless;
 
+import org.serverless.controller.PingController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
-
-import org.example.controller.PingController;
 
 
 @SpringBootApplication

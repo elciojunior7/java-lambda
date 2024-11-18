@@ -1,4 +1,4 @@
-package org.example.dto;
+package org.serverless.dto;
 
 public class HeroDTO {
 
