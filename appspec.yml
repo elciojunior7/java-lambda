@@ -5,5 +5,5 @@ Resources:
         Properties:
            Name: 'myLambdaFunction'
            Alias: 'myLambdaAlias'
-           CurrentVersion: '1'
+           CurrentVersion: '$LATEST'
            TargetVersion: '2'
