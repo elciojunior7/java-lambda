@@ -4,4 +4,7 @@ This is a simple springboot project created throught the Maven Archetype generat
 
 The project folder also includes a `cloudeformartion.yml` file to create a Lambda function throught the AWS Cloudformation.
 
+## How to build
+> mvn clean package
+
 
