@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
 // We use direct @Import instead of @ComponentScan to speed up cold starts
-// @ComponentScan(basePackages = "org.example.controller")
+// @ComponentScan(basePackages = "org.serverless.controller")
 @Import({ PingController.class })
 public class Application {
 
