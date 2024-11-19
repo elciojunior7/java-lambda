@@ -21,6 +21,11 @@ public class HeroService {
 		heroes.add(new HeroDTO("Anna Marie", "Rogue"));
 		heroes.add(new HeroDTO("John Stewart", "Green Lantern"));
 		heroes.add(new HeroDTO("Jefferson Pierce", "Black Lightning"));
+		heroes.add(new HeroDTO("Wade Wilson", "Deadpool"));
+		heroes.add(new HeroDTO("Kara Zor-El", "Supergirl"));
+		heroes.add(new HeroDTO("Logan", "Wolverine"));
+		heroes.add(new HeroDTO("Bruce Wayne", "Batman"));
+		heroes.add(new HeroDTO("T'Challa", "Black Panther"));
 		heroes.sort(new HeroComparator());
 		return heroes;
 	}
