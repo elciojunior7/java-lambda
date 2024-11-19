@@ -26,6 +26,7 @@ public class HeroService {
 		heroes.add(new HeroDTO("Logan", "Wolverine"));
 		heroes.add(new HeroDTO("Bruce Wayne", "Batman"));
 		heroes.add(new HeroDTO("T'Challa", "Black Panther"));
+		heroes.add(new HeroDTO("Alex Summers", "Havok"));
 		heroes.sort(new HeroComparator());
 		return heroes;
 	}

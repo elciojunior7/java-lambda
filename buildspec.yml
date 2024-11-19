@@ -22,6 +22,7 @@ artifacts:
    files:
       - target/java-lambda-1.0-lambda-package.zip
       - appspec.yml
+      - cloudformation.yml
    discard-paths: yes
 cache:
    paths:
