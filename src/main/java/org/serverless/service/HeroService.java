@@ -27,6 +27,11 @@ public class HeroService {
 		heroes.add(new HeroDTO("Bruce Wayne", "Batman"));
 		heroes.add(new HeroDTO("T'Challa", "Black Panther"));
 		heroes.add(new HeroDTO("Alex Summers", "Havok"));
+		heroes.add(new HeroDTO("Jennifer Walters", "She-Hulk"));
+		heroes.add(new HeroDTO("Donald Blake", "Thor"));
+		heroes.add(new HeroDTO("Courtney Whitmore", "Stargirl"));
+		heroes.add(new HeroDTO("Barry Allen", "Flash"));
+		heroes.add(new HeroDTO("Miles Morales", "Spider-man"));
 		heroes.sort(new HeroComparator());
 		return heroes;
 	}
